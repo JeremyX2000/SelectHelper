@@ -61,16 +61,12 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.workspaceControl1 = new SuperMap.UI.WorkspaceControl();
-            this.layersControl1 = new SuperMap.UI.LayersControl();
             this.TabControl = new System.Windows.Forms.TabControl();
-            this.Sence = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.mapControl1 = new SuperMap.UI.MapControl();
-            this.workspace1 = new SuperMap.Data.Workspace(this.components);
             this.contextMenuStripData = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.打开ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.新建ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Sence = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -78,11 +74,8 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.TabControl.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.contextMenuStripData.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -219,26 +212,26 @@
             // 汇水面积计算ToolStripMenuItem
             // 
             this.汇水面积计算ToolStripMenuItem.Name = "汇水面积计算ToolStripMenuItem";
-            this.汇水面积计算ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.汇水面积计算ToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
             this.汇水面积计算ToolStripMenuItem.Text = "汇水面积计算";
             // 
             // 汇水量计算ToolStripMenuItem
             // 
             this.汇水量计算ToolStripMenuItem.Name = "汇水量计算ToolStripMenuItem";
-            this.汇水量计算ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.汇水量计算ToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
             this.汇水量计算ToolStripMenuItem.Text = "汇水量计算";
             // 
             // 河流长度计算ToolStripMenuItem
             // 
             this.河流长度计算ToolStripMenuItem.Name = "河流长度计算ToolStripMenuItem";
-            this.河流长度计算ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.河流长度计算ToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
             this.河流长度计算ToolStripMenuItem.Text = "河流长度计算";
             this.河流长度计算ToolStripMenuItem.Click += new System.EventHandler(this.河流长度计算ToolStripMenuItem_Click);
             // 
             // 河流比降计算ToolStripMenuItem
             // 
             this.河流比降计算ToolStripMenuItem.Name = "河流比降计算ToolStripMenuItem";
-            this.河流比降计算ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.河流比降计算ToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
             this.河流比降计算ToolStripMenuItem.Text = "河流比降计算";
             // 
             // 环境影响分析ToolStripMenuItem
@@ -341,63 +334,9 @@
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.Controls.Add(this.workspaceControl1);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.layersControl1);
             this.splitContainer2.Size = new System.Drawing.Size(285, 707);
             this.splitContainer2.SplitterDistance = 338;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // workspaceControl1
-            // 
-            this.workspaceControl1.AllowDefaultAction = true;
-            this.workspaceControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.workspaceControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.workspaceControl1.Location = new System.Drawing.Point(0, 0);
-            this.workspaceControl1.Name = "workspaceControl1";
-            this.workspaceControl1.Size = new System.Drawing.Size(285, 338);
-            this.workspaceControl1.TabIndex = 0;
-            // 
-            // 
-            // 
-            this.workspaceControl1.WorkspaceToolBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.workspaceControl1.WorkspaceToolBar.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.workspaceControl1.WorkspaceToolBar.Location = new System.Drawing.Point(0, 0);
-            this.workspaceControl1.WorkspaceToolBar.Name = "WorkspaceToolBar";
-            this.workspaceControl1.WorkspaceToolBar.Size = new System.Drawing.Size(285, 33);
-            this.workspaceControl1.WorkspaceToolBar.TabIndex = 0;
-            // 
-            // 
-            // 
-            this.workspaceControl1.WorkspaceTree.AllowDrop = true;
-            this.workspaceControl1.WorkspaceTree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.workspaceControl1.WorkspaceTree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.workspaceControl1.WorkspaceTree.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.workspaceControl1.WorkspaceTree.ItemHeight = 26;
-            this.workspaceControl1.WorkspaceTree.Location = new System.Drawing.Point(0, 66);
-            this.workspaceControl1.WorkspaceTree.Name = "WorkspaceTree";
-            this.workspaceControl1.WorkspaceTree.SelectedNodes = new System.Windows.Forms.TreeNode[0];
-            this.workspaceControl1.WorkspaceTree.Size = new System.Drawing.Size(285, 272);
-            this.workspaceControl1.WorkspaceTree.TabIndex = 1;
-            this.workspaceControl1.WorkspaceTree.Workspace = null;
-            // 
-            // layersControl1
-            // 
-            this.layersControl1.AutoSize = true;
-            this.layersControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.layersControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.layersControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layersControl1.Location = new System.Drawing.Point(0, 0);
-            this.layersControl1.Map = null;
-            this.layersControl1.Name = "layersControl1";
-            this.layersControl1.Scene = null;
-            this.layersControl1.Size = new System.Drawing.Size(285, 365);
-            this.layersControl1.TabIndex = 0;
             // 
             // TabControl
             // 
@@ -411,19 +350,8 @@
             this.TabControl.TabIndex = 0;
             this.TabControl.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
             // 
-            // Sence
-            // 
-            this.Sence.Location = new System.Drawing.Point(4, 28);
-            this.Sence.Name = "Sence";
-            this.Sence.Padding = new System.Windows.Forms.Padding(3);
-            this.Sence.Size = new System.Drawing.Size(1087, 675);
-            this.Sence.TabIndex = 2;
-            this.Sence.Text = "场景";
-            this.Sence.UseVisualStyleBackColor = true;
-            // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.mapControl1);
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -431,25 +359,6 @@
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "地图";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // mapControl1
-            // 
-            this.mapControl1.Action = SuperMap.UI.Action.Select2;
-            this.mapControl1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mapControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapControl1.Location = new System.Drawing.Point(3, 3);
-            this.mapControl1.Margin = new System.Windows.Forms.Padding(72, 33, 72, 33);
-            this.mapControl1.Name = "mapControl1";
-            this.mapControl1.Size = new System.Drawing.Size(1081, 669);
-            this.mapControl1.TabIndex = 0;
-            this.mapControl1.TrackMode = SuperMap.UI.TrackMode.Edit;
-            // 
-            // workspace1
-            // 
-            this.workspace1.Caption = "UntitledWorkspace";
-            this.workspace1.Description = "";
-            this.workspace1.DesktopInfo = "";
             // 
             // contextMenuStripData
             // 
@@ -474,6 +383,16 @@
             this.新建ToolStripMenuItem.Text = "新建";
             this.新建ToolStripMenuItem.Click += new System.EventHandler(this.新建ToolStripMenuItem_Click);
             // 
+            // Sence
+            // 
+            this.Sence.Location = new System.Drawing.Point(4, 28);
+            this.Sence.Name = "Sence";
+            this.Sence.Padding = new System.Windows.Forms.Padding(3);
+            this.Sence.Size = new System.Drawing.Size(1087, 675);
+            this.Sence.TabIndex = 2;
+            this.Sence.Text = "场景";
+            this.Sence.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -496,13 +415,9 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            this.splitContainer2.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.TabControl.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
             this.contextMenuStripData.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -521,10 +436,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private SuperMap.UI.LayersControl layersControl1;
         private System.Windows.Forms.TabControl TabControl;
-        private SuperMap.Data.Workspace workspace1;
-        private System.Windows.Forms.TabPage Sence;
         private System.Windows.Forms.ToolStripMenuItem 项目管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 项目信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 用户信息ToolStripMenuItem;
@@ -542,16 +454,15 @@
         private System.Windows.Forms.ToolStripMenuItem 环境影响分析ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 影响环境分析ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 环境变化分析ToolStripMenuItem;
-        private SuperMap.UI.WorkspaceControl workspaceControl1;
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 创建工作空间ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 另存工作空间ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 保存ToolStripMenuItem;
         private System.Windows.Forms.TabPage tabPage1;
-        private SuperMap.UI.MapControl mapControl1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripData;
         private System.Windows.Forms.ToolStripMenuItem 打开ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 新建ToolStripMenuItem;
+        private System.Windows.Forms.TabPage Sence;
     }
 }
 

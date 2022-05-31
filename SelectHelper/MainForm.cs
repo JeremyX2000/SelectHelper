@@ -26,12 +26,27 @@ namespace SelectHelper
         private Layer3DSettingImage m_layer3DSettingImage;
         private Layer3DSettingVector m_layer3DSettingVector;
         Datasource m_datasource = null;
+        LayersControl layersControl1;
         public Hydrology.Hydrology hydrology = null;
+        Workspace workspace1;
+        MapControl mapControl1;
+        WorkspaceControl workspaceControl1;
 
 
         public MainForm()
         {
             InitializeComponent();
+            workspace1= new Workspace();
+            workspaceControl1 = new WorkspaceControl();
+            mapControl1 = new MapControl();
+            layersControl1= new LayersControl();
+            mapControl1.Dock= DockStyle.Fill;
+            layersControl1.Dock= DockStyle.Fill;
+            tabPage1.Controls.Add(mapControl1);
+            splitContainer2.Panel1.Controls.Add(workspaceControl1);
+            splitContainer2.Panel2.Controls.Add(layersControl1);
+
+
             m_viewIndex = 0;
             CreateSceneControl();
             BandMapControl();
